@@ -1,7 +1,7 @@
 import nbformat
 
-input_path = 'Compression with different models.ipynb'
-output_path = 'Compression with different models_fixed.ipynb'
+input_path = 'Steering vector with hyper prior.ipynb'
+output_path = 'Steering vector with hyper prior_fixed.ipynb'
 
 # Read the notebook
 nb = nbformat.read(input_path, as_version=nbformat.NO_CONVERT)
