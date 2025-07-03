@@ -1,18 +1,21 @@
 import nbformat
 
-# Пути
 input_path = 'Compression with different models.ipynb'
 output_path = 'Compression with different models_fixed.ipynb'
 
-# Читаем ноутбук
+# Read the notebook
 nb = nbformat.read(input_path, as_version=nbformat.NO_CONVERT)
 
-# Проходим по всем ячейкам и очищаем metadata.widgets
+# Remove widgets metadata at notebook level
+if 'widgets' in nb.metadata:
+    del nb.metadata['widgets']
+
+# Remove widgets metadata from each cell
 for cell in nb.cells:
     if 'widgets' in cell.metadata:
         del cell.metadata['widgets']
 
-# Сохраняем исправленный ноутбук
+# Write the fixed notebook
 nbformat.write(nb, output_path)
 
-print(f"Исправленный файл сохранён как: {output_path}")
+output_path
