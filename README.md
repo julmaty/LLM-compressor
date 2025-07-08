@@ -7,6 +7,9 @@
 Основная часть работы находится в ноутбуках Compression with different models.ipynb, Compression with steering vector.ipynb и Steering vector with hyper prior.ipynb.
 Отчет можно скачать в pdf и tex файлах.
 
+В ходе нашего исследования было провидено сравнение качества и скорости арифметического кодирования и декодирования с использованием различных небольших LLM. Были проведены эксперименты с использованием steering vector - фиксированного и обучаемого.
+Также сам steering vector кодировался с помощзью различных видов hyper-prior.
+
 ## Подготовка
 
 При подготовке работы были изучены научные статьи [Language Modeling is Compression](https://arxiv.org/pdf/2309.10668), [Variational image compression with a scale hyperprior](https://arxiv.org/pdf/1802.01436).
